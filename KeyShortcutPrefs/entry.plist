@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = KeyShortcut;
+	cell = PSLinkCell;
+	detail = KeyShortcutListController;
+	icon = KeyShortcut.png;
+	isController = 1;
+	label = KeyShortcut;
+    };
+}
