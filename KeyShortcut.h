@@ -1,9 +1,7 @@
 /* Created by Mustafa Gezen on 23.04.2014 */
-#import <UIKit/UIGestureRecognizerSubclass.h>
 #import <UIKit/UIKeyboardLayoutStar.h>
 #import <UIKit/UIKeyboardInput.h>
 #import <UIKit/UITextInput.h>
-#import "KSLabel.h"
 
 @interface UIKeyboardImpl : UIView
     + (UIKeyboardImpl*)activeInstance;
@@ -14,6 +12,7 @@
     - (void)clearTransientState;
     - (void)setCaretBlinks:(BOOL)arg1;
     - (void)deleteFromInput;
+    - (void)dismissKeyboard;
     @property (readonly, assign, nonatomic) UIResponder <UITextInputPrivate> *privateInputDelegate;
     @property (readonly, assign, nonatomic) UIResponder <UITextInput> *inputDelegate;
 @end
@@ -52,6 +51,11 @@ static NSString *redoKey;
 static NSString *selectLastKey;
 static NSString *beginningKey;
 static NSString *endKey;
+static NSString *firstHigherKey;
+static NSString *lastUpperKey;
+static NSString *lastLowerKey;
+static NSString *deleteLastKey;
+static NSString *dismissKey;
 static NSString *oneKey;
 static NSString *twoKey;
 static NSString *threeKey;

@@ -1,6 +1,6 @@
 Package: org.thebigboss.keyshortcutpro
 Name: KeyShortcut Pro
-Version: 1.4
+Version: 1.7-1
 Architecture: iphoneos-arm
 Description: Key shortcuts for text input, Pro version includes profiles and configurable shortcuts
 Maintainer: switchpwn <mustiigezen@gmail.com>
